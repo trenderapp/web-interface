@@ -22,7 +22,7 @@ function DisplayAccountInformations({ informations }) {
     const { t, currentLanguage } = useTranslation();
     const [edit, setEdit] = useState(false);
     const { user  } = useContext(UserContext);
-    const [following, setFollowing] = useState(informations?.following ? true : false)
+    const [following, setFollowing] = useState(informations?.following ? true : false);
     const { setAlert } = useContext(AlertContext);
     const [extraOptions, setExtraOptions] = useState(false);
 

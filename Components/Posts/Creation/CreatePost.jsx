@@ -44,7 +44,7 @@ function CreatePost() {
                         'content-type': 'multipart/form-data',
                     },
                     onUploadProgress: function(progressEvent) {
-                        var percentCompleted = Math.round((progressEvent.loaded * 100) / progressEvent.total );
+                        var percentCompleted = Math.round((progressEvent.loaded * 100) / progressEvent.total);
                         setSending({ send: true, progress: percentCompleted })
                     },
                     validateStatus: s => s < 501
